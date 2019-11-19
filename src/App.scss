@@ -1,0 +1,48 @@
+.app {
+  // display: flex;
+  // justify-content: center;
+  //height: 100%; 
+  //width: 100%;
+  text-align: center;
+}
+
+.app-body {
+  display: flex;
+  justify-content: center;
+  height: calc(90%);
+  margin-top: 0px; 
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BEBEBE;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #BEBEBE;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #BEBEBE;
+}

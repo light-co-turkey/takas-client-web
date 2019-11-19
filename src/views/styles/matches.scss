@@ -1,0 +1,82 @@
+.matched-frame {
+  margin-top: 6vw;
+  margin-left: 12%;
+  margin-right: auto;
+  width: 80%;
+  height: 10vw;
+
+}
+
+.item-title {
+  height: 100%;
+  width: 15%;
+
+  background: #FAFAFA;
+  line-height: 9.5vw;
+  font-weight: bold;
+	font-size: 2vw;
+  color:#474747;
+  border: 2px solid #E2E2E2;
+  /* border-radius: 10px 0px 0px 10px; */
+}
+
+.img-frame {
+  height: 100%;
+  width: 15%;
+
+  border: 2px solid #E2E2E2;
+}
+
+span {
+  float: left;
+}
+
+.matcher {
+  height: 100%;
+  width: 15%;
+
+  border: 2px solid #E2E2E2;
+  background: url(../../images/match_arrows_matches.svg);
+  background-color: #FAFAFA;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 50%;
+}
+
+#float-left {
+  float: left;
+}
+
+#float-right {
+  float: right;
+}
+
+.chat-btn {
+  height: 100%;
+  width: 15%;
+
+  background: url(../../images/chat.svg);
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% 50%;
+  border: 2px solid #E2E2E2;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25), inset -2px -2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.status-indicator {
+  float: left;
+
+  height: 100%;
+  width: 10%;
+
+  line-height: 9.5vw;
+  font-weight: bold;
+	font-size: 2vw;
+  color:white;
+  background: #8BD379;
+  border: 2px solid #E2E2E2;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25), inset -2px -2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0px 0px 10px;
+}
