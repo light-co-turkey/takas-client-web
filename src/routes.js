@@ -1,7 +1,7 @@
 import React from 'react';
 import Loadable from 'react-loadable';
 
-import DefaultLayout from './containers/DefaultLayout';
+import Landing from './components/layout/Landing';
 import constants from './shared/constants';
 // import i18n from './i18n';
 
@@ -11,6 +11,16 @@ function Loading() {
 }
 
 const { USER_ROLES } = constants;
+
+const Login = Loadable({
+  loader: () => import('./components/Login'),
+  loading: Loading,
+});
+
+const SignUp = Loadable({
+  loader: () => import('./components/SignUp'),
+  loading: Loading,
+});
 
 const Profile = Loadable({
   loader: () => import('./views/Profile'),
@@ -40,33 +50,45 @@ const CreateProduct = Loadable({
 const routes = [
   {
     path: '/',
-    name: 'DEFAULT.LAYOUT',
-    component: DefaultLayout,
+    name: 'LANDING',
+    component: Landing,
     exact: true,
   },
   {
-    path: '/profile/',
+    path: '/login',
+    name: 'Login',
+    component: Login,
+    exact: true,
+  },
+  {
+    path: '/signup',
+    name: 'SignUp',
+    component: SignUp,
+    exact: true,
+  },
+  {
+    path: '/profile',
     name: 'PROFILE',
     component: Profile,
     exact: true,
     //allowed: [USER_ROLES.SUPER_USER],
   },
   {
-    path: '/home/',
+    path: '/home',
     name: 'HOME',
     component: Home,
     exact: true,
     //allowed: [USER_ROLES.SUPER_USER],
   },
   {
-    path: '/matches/',
+    path: '/matches',
     name: 'MATCHES',
     component: Matches,
     exact: true,
     //allowed: [USER_ROLES.SUPER_USER],
   },
   {
-    path: '/create-product/',
+    path: '/create-product',
     name: 'CREATE_PRODUCT',
     component: CreateProduct,
     exact: true,

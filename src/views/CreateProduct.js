@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import CategoryList from '../components/CategoryList';
 import './styles/create-product.scss';
 
 export class CreateProduct extends Component {
   render() {
     return (
       <div style={{ display: 'flex', width:'100%', height:'100%', padding: '0 18% 0 18%'}}>
-        <div className='sort-frame'><div className='sort-title'><p className='title'>Çeşit</p></div></div>
+        <div className='sort-frame'><div className='sort-title'><p className='title'>Çeşit</p></div>
+          <CategoryList/>
+        </div>
         <div className='form-frame'>
           <div className='add-image'></div>
           <ul>

@@ -1,6 +1,6 @@
 import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import reducer from '../reducers';
+import reducer from '../../reducers';
 // import config from '../config';
 
 // const composeEnhancers = config.ENV === 'local' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;

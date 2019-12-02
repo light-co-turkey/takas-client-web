@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import shortid from 'shortid';
-import DefaultHeader from './DefaultHeader';
+import Navbar from './Navbar';
 //import '../../publicStyles.css';
 // routes config
-import routes from '../routes';
+import routes from '../../routes';
 
-class DefaultLayout extends Component {
+class Layout extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { width: 0, height: 0 };
@@ -30,7 +30,6 @@ class DefaultLayout extends Component {
 	render() {
 		const appWidth = this.state.width;
 		const appHeight = this.state.height;
-
 		const appScale = {
 			paddingLeft: '5%',
 			paddingRight: '5%',
@@ -62,14 +61,14 @@ class DefaultLayout extends Component {
 							/>
 						) : null
 					)}
-					{/* <Redirect from="/" to={this.props.redirectPath} /> */}
+					<Redirect from='/' to='/landing' />
 				</Switch>
 			</main>
 		);
 		return (
 			<div style={appScale} className="app">
-				<DefaultHeader/>
-				<div className="app-body">{main()}</div>
+				{/* <Navbar/>
+				<div className="app-body">{main()}</div> */}
 			</div>
 		);
 	}
@@ -96,5 +95,5 @@ const mapStateToProps = state => ({
 export default connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(DefaultLayout);
+)(Layout);
 // export default connect(mapStateToProps, mapDispatchToProps)(withNamespaces('translation')(DefaultLayout));

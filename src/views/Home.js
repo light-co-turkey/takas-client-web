@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import match_arrows from '../images/match_arrows.png'
-import arrow_left from '../images/arrow_left.png'
-import arrow_right from '../images/arrow_right.png'
+import match_arrows from '../shared/images/match_arrows.png'
+import arrow_left from '../shared/images/arrow_left.png'
+import arrow_right from '../shared/images/arrow_right.png'
 
 import './styles/home.scss'
 

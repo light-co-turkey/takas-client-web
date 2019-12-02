@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import takasIco from '../images/yin_yang.png';
+import takasIco from '../../shared/images/yin_yang.png';
 
-import './styles/defaultHeader.scss';
+import './styles/navbar.scss';
 
-class DefaultHeader extends Component {
+class Navbar extends Component {
 	constructor (props) {
 		super(props);
 		this.state = {matchCount: 0};
@@ -30,4 +30,4 @@ class DefaultHeader extends Component {
 	}
 }
 
-export default withRouter(DefaultHeader);
+export default withRouter(Navbar);

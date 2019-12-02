@@ -4,9 +4,9 @@ import { render } from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import './index.css'
-import store from "./store";
+import store from "./shared/store";
 import { Provider as ReduxProvider } from "react-redux";
-import './fonts/UpperEastSide.ttf'
+import './shared/fonts/UpperEastSide.ttf'
 
 render(
   <ReduxProvider store={store}>
